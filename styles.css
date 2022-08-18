@@ -4,6 +4,12 @@
   padding: 0;
   -webkit-user-select: none;
   /* Chrome/Safari/Opera */
+  cursor: url(/assets/img/cursor.png), auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
 }
 
 .container {
@@ -129,13 +135,284 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  font-family: "Font Awesome 6 Free", monospace;
+  width: 100%;
+  height: 90vh;
+  background: url(/assets/img/error1.jpg) center no-repeat;
+  background-size: cover;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   color: white;
-  background-color: black;
+
 }
+
+.navigation-buffer {
+  height: 70px;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 48px;
+  z-index: 40;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background: rgba(31, 44, 224, 0.676);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.Icon-dj {
+  height: 64px;
+  width: auto;
+  display: block;
+  padding: 0 0;
+  margin-right: 24px;
+}
+
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  text-decoration: overline;
+  font-weight: bold;
+}
+
+.navigation-links a:hover {
+  color: rgb(163, 14, 14);
+  transition: .4s;
+}
+
+.navigation-links:last-child {
+  margin-left: auto;
+}
+
+.navigation-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+  padding: 8px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* In case I'll add links */
+  cursor: pointer;
+}
+
+.background-video {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 50vh;
+  min-height: 280px;
+  width: 100vw;
+}
+
+.video-background {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 24px;
+}
+
+.events-info {
+  position: absolute;
+  bottom: 0;
+  width: 20vw;
+  height: 15vh;
+  margin: 24px 56px;
+  padding: 16px 24px;
+  background-color: rgb(0, 0, 0);
+  font-family: "Font Awesome 6 Free", monospace;
+  white-space: nowrap;
+  font-size: 14px;
+  min-width: 300px;
+}
+
+.button-events-info {
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: solid 1px black;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+
+
+.button-events-info:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(163, 14, 14);
+  transition: .3s;
+}
+
+.gallery-section {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 100px;
+}
+
+.gallery-section-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-section-container>img {
+  width: 30vw;
+  height: 100%;
+  margin: 24px 8px;
+  object-fit: cover;
+}
+
+.gallery-section-container .img-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: opacity 1s ease-in-out;
+}
+
+.img-front:hover {
+  opacity: 0;
+}
+
+.wrapper-about-us {
+  width: 100%;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.75);
+  animation: 1s ease-in-out .6s forwards fadein;
+}
+
+.wrapper-about-us img {
+  height: auto;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.about-us-text {
+  width: 50vw;
+  margin-left: 8em;
+  font-size: 18px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.about-us-text h2 {
+  text-align: center;
+  padding-bottom: 24px;
+  color: rgba(31, 44, 224, 0.676);
+  font-family: "Font Awesome 6 Free", monospace;
+}
+
+.about-us-button {
+  background-color: rgba(17, 27, 160, 0.819);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  margin-top: 32px;
+  padding: 8px 0px;
+  transition: .4s;
+  font-size: 14px;
+  text-align: center;
+}
+
+.about-us-button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(31, 44, 224, 0.676);
+  cursor: pointer;
+}
+
+.wrapper-about-us-main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 64px auto;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-sign-up {
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #131313;
+  border-bottom: 1px solid #222;
+}
+
+.wrapper-sign-up-text {
+  width: 50vw;
+  font-size: 18px;
+  color: rgba(31, 44, 224, 0.676);
+  font-family: "Font Awesome 6 Free", monospace;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.form-sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+input#email {
+  border: none;
+  background: none;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-top: 18px;
+  padding-bottom: 5px;
+  width: 100%;
+  transition: .5s all;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+}
+
+.wrapper-sign-up-button {
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background .2s;
+  height: 40px;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 11px 16px;
+  display: inline-block;
+  font-weight: 600;
+  border: 2px solid transparent;
+  margin: 10px 0;
+}
+
+.wrapper-sign-up-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(163, 14, 14);
+  transition: .3s;
+}
+
 
 .hidden {
   display: none !important;

@@ -8,4 +8,4 @@ const onPreviewScreenClick = () => {
   previewScreen.classList.add('hidden')
 }
 
-previewScreen.addEventListener('click', onPreviewScreenClick)
+// previewScreen.addEventListener('click', onPreviewScreenClick)

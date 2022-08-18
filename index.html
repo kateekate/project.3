@@ -17,9 +17,100 @@
   <audio id="soundtrack">
     <source src="/assets/audio/audio.mp3" type="audio/mpeg">
   </audio>
+
+  <!-- Main screen -->
   <div id="preview-screen">
-    <div>Click to Start</div>
+    <div class="navigation-container border-animation">
+      <img src="/assets/img/icon-dj.jpeg" alt="Icon-dj" class="Icon-dj">
+      <div class="navigation-links">
+        <a class="navigation-link" href="/">Events</a>
+        <a class="navigation-link" href="/">Video</a>
+        <a class="navigation-link" href="/">Shop</a>
+      </div>
+      <div class="navigation-links">
+        <a class="navigation-link" href="#about-us">About us</a>
+        <a class="navigation-link" href="/">Account</a>
+      </div>
+    </div>
+    <div class="background-video">
+      <video muted class="video-background" autoplay playsinline loop style="opacity: 1;">
+        <source src="/assets/video/video.mp4" type="video/mp4">
+      </video>
+      <div class="events-info">
+        <h2>New fest soon</h2>
+        <a href="#" target="_blank">
+          <button class="button-events-info">
+            more info
+          </button>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <!-- Section Gallery w/ animation -->
+  <section class="gallery-section">
+    <div class="gallery-section-container">
+      <img src="/assets/img/rave1.jpeg" alt="Rave image" class="img-back">
+      <img src="/assets/img/rave2.jpeg" alt="Rave image" class="img-front">
+    </div>
+
+    <div class="gallery-section-container">
+      <img src="/assets/img/rave8.jpeg" alt="Rave image" class="img-back">
+      <img src="/assets/img/rave7.jpeg" alt="Rave image" class="img-front">
+    </div>
+
+    <div class="gallery-section-container">
+      <img src="/assets/img/rave10.jpeg" alt="Rave image" class="img-back">
+      <img src="/assets/img/rave11.jpeg" alt="Rave image" class="img-front">
+    </div>
+  </section>
+
+  <!--Section About US-->
+  <section id="about-us" class="wrapper-about-us">
+    <div class="wrapper-about-us-main">
+
+      <div class="rave-photo">
+        <img src="/assets/img/rave5.jpeg" alt="Festival photo">
+        <img src="/assets/img/rave6.jpeg" alt="Festival photo">
+      </div>
+
+      <div class="about-us-text">
+
+        <h2>About Error</h2>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
+          pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.
+          Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex,
+          in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+          per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut
+          vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+          Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat
+          faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.</h5>
+        <div class="about-us-button"><a href="/" target="_blank">Contact us</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="wrapper-sign-up">
+    <div class="wrapper-sign-up-text">
+      <h4>SIGN UP TO OUR NEWSLETTER FOR 20% OFF YOUR FIRST ORDER IN THE SHOP PLUS PRIORITY ACCESS TO NEWS, DROPS AND
+        EVENTS.</h4>
+      <form class="form-sign-up">
+        <label for="email" class="wrapper-sign-up-email">
+          <input id="email" name="EMAIL" placeholder="Email" type="email" required value>
+        </label>
+        <button class="wrapper-sign-up-button">
+          submit
+        </button>
+      </form>
+    </div>
+  </section>
+
+  </div>
+
+
+
+  <!-- Block Producer Card -->
   <div id="content-screen" class="container hidden">
     <div class="user-box">
       <div class="top-icons">

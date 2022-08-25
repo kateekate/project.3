@@ -183,6 +183,17 @@ header {
   cursor: pointer;
 }
 
+
+.img-animation-resize {
+  padding: 20px;
+  border: solid 1px white;
+  ;
+}
+
+.img-animation-resize-hidden {
+  overflow: hidden;
+}
+
 .upcoming-card-image:hover {
   opacity: 0.8;
 }
@@ -205,6 +216,12 @@ header {
   height: 100%;
   border: solid 1px white;
   padding: 5%;
+}
+
+.rectangle-upcoming-image:hover {
+  border: 3px solid black;
+  padding: 0px;
+  border: 1px solid white;
 }
 
 .upcoming-card-info {
